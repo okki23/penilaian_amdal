@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-
+  $('#myModal').modal({backdrop: 'static', keyboard: false})  
   // Header fixed and Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
