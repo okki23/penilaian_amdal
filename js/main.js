@@ -1,5 +1,19 @@
 jQuery(document).ready(function($) {
-  $('#myModal').modal({backdrop: 'static', keyboard: false})  
+  $("#openmodal").on("click",function(){
+    $('#myModal').modal({backdrop: 'static', keyboard: false})  
+  });
+
+  $(function ()
+  {
+      $("#wizard").steps({
+          headerTag: "h2",
+          bodyTag: "section",
+          transitionEffect: "slideLeft",
+          stepsOrientation: "vertical"
+      });
+  });
+
+  
   // Header fixed and Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {

@@ -23,6 +23,12 @@
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
 
+ 
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/jquery.steps.css">
+ 
+
+
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
  
@@ -87,19 +93,28 @@
    <section id="penilaian"  class="section-bg">
  <div class="container-fluid">
         <div class="section-header">
-          <h3 class="section-title">Penilaian</h3>
+          <div align="center">
+              <h3 class="section-title">Penilaian</h3>
         
-            <br>
-            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-            <br>
-            &nbsp; 
+              <br>
+              <button type="button" class="btn btn-info btn-lg" id="openmodal" > Setup Penilaian </button>
+              <br>
+              &nbsp; 
+              <div class="alert alert-success" role="alert">
+                  <h4 class="alert-heading">Penilaian AMDAL</h4>
+                  <p> Dalam Peraturan Menteri Negara Lingkungan Hidup RI Nomor 05 Tahun 2012, yang dimaksud dengan AMDAL (Analisis Mengenai Dampak Lingkungan Hidup) yang adalah kajian mengenai dampak penting suatu usaha dan/atau kegiatan yang direncanakan pada lingkungan hidup yang diperlukan bagi proses pengambilan keputusan tentang penyelenggaraan usaha dan/atau kegiatan. </p>
+                  
+                </div>
+              
+          </div>
+         
         </div>
 
         <div class="row">
           
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
     
       <!-- Modal content-->
       <div class="modal-content">
@@ -109,23 +124,41 @@
           
         </div>
         <div class="modal-body">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#infoPanel" role="tab">Info</a>
-            <li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#ads" role="tab">Ads</a>
-            <li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#placementPanel" role="tab">Placement</a>
-            <li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#schedulePanel" role="tab">Schedule</a>
-            <li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#reviewPanel" role="tab">Review</a>
-            <li>
-          </ul>
+         
+          <div id="wizard">
+            <h2>First Step</h2>
+            <section>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, 
+                    sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a semper dui. Nunc eget quam libero. Nam at felis metus. 
+                    Nam tellus dolor, tristique ac tempus nec, iaculis quis nisi.</p>
+            </section>
+
+            <h2>Second Step</h2>
+            <section>
+                <p>Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac ligula elementum pellentesque. 
+                    In lobortis sollicitudin felis non eleifend. Morbi tristique tellus est, sed tempor elit. Morbi varius, nulla quis condimentum 
+                    dictum, nisi elit condimentum magna, nec venenatis urna quam in nisi. Integer hendrerit sapien a diam adipiscing consectetur. 
+                    In euismod augue ullamcorper leo dignissim quis elementum arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Vestibulum leo velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis iaculis nec, malesuada a diam. 
+                    Donec non pulvinar urna. Aliquam id velit lacus.</p>
+            </section>
+
+            <h2>Third Step</h2>
+            <section>
+                <p>Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo condimentum dapibus. Fusce eros justo, 
+                    pellentesque non euismod ac, rutrum sed quam. Ut non mi tortor. Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat. 
+                    Donec diam massa, porta vel dictum sit amet, iaculis ac massa. Sed elementum dui commodo lectus sollicitudin in auctor mauris 
+                    venenatis.</p>
+            </section>
+
+            <h2>Forth Step</h2>
+            <section>
+                <p>Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula vulputate. Aliquam sed sem tortor. 
+                    Quisque sed felis ut mauris feugiat iaculis nec ac lectus. Sed consequat vestibulum purus, imperdiet varius est pellentesque vitae. 
+                    Suspendisse consequat cursus eros, vitae tempus enim euismod non. Nullam ut commodo tortor.</p>
+            </section>
+        </div>
+         
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -248,6 +281,9 @@
 
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
+    
+ 
+  <script src="js/jquery.steps.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
